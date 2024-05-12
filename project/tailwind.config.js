@@ -10,7 +10,8 @@ export default {
       colors:{
         'primary': '#010851',
         'secondary':'#9A7AF1',
-        'tertiary':'#707070'
+        'tartiary':'#707070',
+        'pink':'#EE9AE5'
       }
     },
   },
