@@ -3,3 +3,7 @@
 body{
     font-family: 'Jost', sans-serif;
 }
+
+nav{
+    z-index: 10001 !important;
+}
