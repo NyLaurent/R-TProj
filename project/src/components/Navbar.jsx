@@ -43,8 +43,8 @@ const Navbar = () => {
                 </div>
 
                 <div className='md:hidden'>
-                    <button onClick={toggleMenu} className='text-white focus:outline-none focus:text-gray-300'>
-                        {isMenuOpen ? <FaXmark className='w-6 h-6 text-primary' /> : <FaBars className='w-6 h-6 text-primary' />}
+                    <button onClick={toggleMenu} className='text-white  text-xl focus:outline-none focus:text-gray-300'>
+                        {isMenuOpen ? <FaXmark className='w-6 h-6 text-primary ' /> : <FaBars className='w-6 h-6 text-primary' />}
                     </button>
                 </div>
             </div>
