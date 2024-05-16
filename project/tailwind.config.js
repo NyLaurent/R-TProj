@@ -14,7 +14,7 @@ export default {
         'pink':'#EE9AE5'
       },
       backgroundImage: {
-        'gradientBg': 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)', 
+        'gradientBg': 'linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%)', 
       },
     },
    
