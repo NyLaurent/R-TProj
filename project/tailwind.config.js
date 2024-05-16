@@ -12,8 +12,12 @@ export default {
         'secondary':'#9A7AF1',
         'tartiary':'#707070',
         'pink':'#EE9AE5'
-      }
+      },
+      backgroundImage: {
+        'gradientBg': 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)', 
+      },
     },
+   
   },
   plugins: [],
 }
