@@ -1,6 +1,8 @@
 
 import rectImg from '../assets/rect.png'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../variants'
 
 const Pricing = () => {
     const [isYearly, setIsYearly] = useState(false);
@@ -52,7 +54,11 @@ const Pricing = () => {
                 </div>
             </div>
 
-            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx:auto'>
+            <motion.div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx:auto'
+             variants={fadeIn("up", 0.2)}
+             initial="hidden"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.5 }}>
                 {
                     packages.map((pkg,index) => <div key={index} className='border py-10 md:px-6 px-4 rounded-lg shadow-3xl'>
                         <h3 className='text-3xl font-bold text-center text-primary'>{pkg.name}</h3>
@@ -74,7 +80,7 @@ const Pricing = () => {
                         </div>
                     </div>)
                 }
-            </div>
+            </motion.div>
         </div>
     )
 }
