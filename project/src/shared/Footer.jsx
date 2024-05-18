@@ -1,5 +1,9 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import facebook from '../assets/facebook.png';
+import instagram from '../assets/instagram.png';
+import linkedin from '../assets/linkedin.png';
+import twitter from '../assets/twitter.png';
 
 const Footer = () => {
   return (
@@ -60,9 +64,14 @@ const Footer = () => {
       </div>
 
       <hr />
-      <div>
+      <div className='flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8'>
         <p>@ UMUKORO 20XX ---20XX. All rights reserved</p>
-        <div></div>
+        <div className='flex items-center space-x-5'> 
+            <img src={facebook} alt="" className='w-8 cursor-pointer hover:translate-y-4 transition-all duration-300'/>
+            <img src={instagram} alt="" className='w-8 cursor-pointer hover:translate-y-4 transition-all duration-300' />
+            <img src={linkedin} alt="" className='w-8 cursor-pointer hover:translate-y-4 transition-all duration-300' />
+            <img src={twitter} alt="" className='w-8 cursor-pointer hover:translate-y-4 transition-all duration-300' />
+        </div>
       </div>
     </div>
   );
