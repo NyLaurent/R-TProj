@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 import { MdLanguage } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='bg-white md:px-14 p-4 max-w-screen-2xl border-b mx-auto text-primary fixed top-0 right-0 left-0 z-50'>
+        <nav className='bg-white md:px-14 p-4 max-w-screen-2xl border-b mx-auto text-primary fixed top-0 right-0 left-0 z-50 cursor-pointer'>
             <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
                 <div className='flex space-x-14 items-center'>
                     <a href="/" className='text-3xl font-semibold flex items-center space-x-3 text-primary'>
@@ -29,7 +30,7 @@ const Navbar = () => {
                     <ul className='md:flex space-x-12 hidden'>
                         {navItems.map(({ link, path }) => (
                             <li key={link}>
-                                <a className='block hover:text-gray-300' href={path}>{link}</a>
+                                <Link activeClass='active' spy={true} smooth = {true}offset={-100} className='block hover:text-gray-300' to={path}>{link}</Link>
                             </li>
                         ))}
                     </ul>
@@ -54,7 +55,9 @@ const Navbar = () => {
                 <ul className='flex flex-col space-y-4 px-4 pt-24 pb-5 bg-secondary'>
                     {navItems.map(({ link, path }) => (
                         <li key={link}>
-                            <a className='block hover:text-gray-300' href={path}>{link}</a>
+                            <Link activeClass='active' spy={true} smooth = {true}offset={-80} className='block text-white hover:text-gray-300' to={path}>{link}
+                            onClick ={toggleMenu}
+                            </Link>
                         </li>
                     ))}
                 </ul>
