@@ -14,7 +14,7 @@ export default {
         'pink':'#EE9AE5'
       },
       backgroundImage: {
-        'gradientBg': 'linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%)', 
+        'gradientBg': 'linear-gradient(62deg, #307dca 0%, #a46fd6 100%)', 
       },
       boxShadow:{
         '3xl':'0 10px 50px 0px rgba(0,0,0,0.15)',

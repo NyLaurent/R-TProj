@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import { MdLanguage } from "react-icons/md";
+import { MdLanguage } from 'react-icons/md';
+
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
                     <ul className='md:flex space-x-12 hidden'>
                         {navItems.map(({ link, path }) => (
                             <li key={link}>
-                                <Link activeClass='active' spy={true} smooth = {true}offset={-100} className='block hover:text-gray-300' to={path}>{link}</Link>
+                                <Link activeClass='active' spy={true} smooth={true} offset={-100} className='block hover:text-gray-300' to={path}>{link}</Link>
                             </li>
                         ))}
                     </ul>
@@ -55,8 +56,8 @@ const Navbar = () => {
                 <ul className='flex flex-col space-y-4 px-4 pt-24 pb-5 bg-secondary'>
                     {navItems.map(({ link, path }) => (
                         <li key={link}>
-                            <Link activeClass='active' spy={true} smooth = {true}offset={-80} className='block text-white hover:text-gray-300' to={path}>{link}
-                            onClick ={toggleMenu}
+                            <Link activeClass='active' spy={true} smooth={true} offset={-80} className='block text-white hover:text-gray-300' to={path}>{link}
+                                onClick ={toggleMenu}
                             </Link>
                         </li>
                     ))}

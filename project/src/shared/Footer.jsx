@@ -7,7 +7,7 @@ import twitter from '../assets/twitter.png';
 
 const Footer = () => {
   return (
-    <div className="bg-[#010851] md:px-14 p-4 max-w-screen-2xl mx-auto text-white">
+    <div className="bg-[#011851] md:px-14 p-4 max-w-screen-2xl mx-auto text-white">
       <div className="my-12 flex flex-col md:flex-row gap-10">
         <div className="md:w-1/2 space-y-8">
           <a href="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
