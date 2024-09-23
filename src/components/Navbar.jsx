@@ -52,8 +52,8 @@ const Navbar = () => {
             </div>
 
             {/* Responsive Menu */}
-            <div className={`md:hidden ${isMenuOpen ? 'block fixed top-16 right-0 left-0 z-50' : 'hidden space-y-4 px-4 pt-24 pb-5 bg-secondary'}`}>
-                <ul className='flex flex-col space-y-4 px-4 pt-24 pb-5 bg-secondary'>
+            <div className={`md:hidden ${isMenuOpen ? 'block fixed top-16 right-0 left-0 z-50 text-red-400' : 'hidden space-y-4 px-4 pt-24 pb-5 bg-secondary'}`}>
+                <ul className='justify-center flex flex-col space-y-1 items-center  bg-secondary'>
                     {navItems.map(({ link, path }) => (
                         <li key={link}>
                             <Link activeClass='active' spy={true} smooth={true} offset={-80} className='block text-white hover:text-gray-300' to={path}>{link}
